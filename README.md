@@ -8,7 +8,9 @@ Steps to use the perfect binary array in FALP:
 
 %% Some interesting properties of P
 
+
 A. abs(fft2(P)) is unimodular !! Check out surf(abs(fft2(P)))
+
 B. Any 2D-circulant shift of P is orthogonal to P, i.e., <P,shifted P> =0 !
 
 
