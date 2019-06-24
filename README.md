@@ -1,8 +1,19 @@
 # Construction-of-square-perfect-binary-arrays
-Construction of square perfect binary arrays in FALP [1]
+
+Steps to use the perfect binary array in FALP:
+
+1) N=32; % In FALP, we considered a 32x32 UPA, i.e.,  N=32.
+2) Matrix=dlmread('PBA_32x32.txt');   % Loads the binary perfect array used in FALP
+3) P= Matrix/N;  % P is the base matrix- has unit norm after scaling
+
+%% Some interesting properties of P
+
+A. abs(fft2(P)) is unimodular !! Check out surf(abs(fft2(P)))
+B. Any 2D-circulant shift of P is orthogonal to P, i.e., <P,shifted P> =0 !
 
 
-To be posted after publication in IEEE Xplore.
+%% Channel measurements can be acquired by applying random 2D-circulant shifts of P to the phased array
+%% Recursive construction and partial 2D-DFT-based CS to be posted after publication in IEEE Xplore.
 
 
 
